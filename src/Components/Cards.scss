@@ -1,0 +1,48 @@
+.card{
+    width: 30rem;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: #f8f8f8;
+    }
+
+    &-img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 12px;
+        box-shadow: 0 0 3px #969494;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        img{
+            max-width: 90%;
+        }
+    }
+
+    &-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.4rem 1rem;
+        margin: 0 0.2rem;
+
+        p{
+            font-size: 0.8rem;
+            margin: 0.1rem;
+        }
+
+        &-name{
+            font-size: 1rem;
+        }
+    }
+}
